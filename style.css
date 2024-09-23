@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(10, 10, 10);
+    background-color: #333;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dummy-section {
+    height: 100vh;
+}
+
+.content-section {
+    width: 100%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 1rem 12rem;
+}
+
+.card-text {
+    max-height: 0; /* Initially no height */
+    opacity: 0; /* Initially transparent */
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+    overflow: hidden; /* Hide overflow */
+    color: #fff;
+}
+  /* Expanded State for Mobile */
+  .expanded .card-text {
+     max-height: 100px; /* Adjust as needed */
+     opacity: 1; /* Fade in */
+ }
+
+ .card {
+     background: transparent !important;
+     border-radius: 10px;
+ }
+
+.content-section:hover .card-text {
+    max-height: 100px; /* Adjust as needed */
+    opacity: 1; /* Fade in */
+}
+
+.card {
+    background: transparent !important;
+    border-radius: 10px;
+}
+
+.nhance-ppc-card-bg,
+.nhance-ppc-card-bg-1,
+.nhance-ppc-card-bg-2 {
+    background-image: url('./img/abstract-background-noise-texture 1.png') !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-color: rgba(255, 255, 255, 0.228);
+    border-radius: 20px;
+    backdrop-filter: blur(0px) !important;
+}
+
+.nhance-ppc-card-bg {
+    border: 1px solid #29B473;
+}
+
+.nhance-ppc-card-bg-1 {
+    border: 1px solid #5BCAF4;
+}
+
+.nhance-ppc-card-bg-2 {
+    border: 1px solid #E87994;
+}
+
+.card-title {
+    margin-bottom: var(--bs-card-title-spacer-y);
+    color: var(--bs-card-title-color);
+    background-color: #29B473B2;
+    padding: 1.1rem 1.5rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+}
+
+.section-bg {
+    background-image: url('./img/bg-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nhance-ppc-card,
+.nhance-ppc-card-1,
+.nhance-ppc-card-2 {
+    border-radius: 16px;
+}
+
+.nhance-ppc-card {
+    background-color: #29B4734D;
+}
+
+.nhance-ppc-card-1 {
+    background-color: #5BCAF44D !important;
+}
+
+.nhance-ppc-card-2 {
+    background-color: #E879944D !important;
+}
+
+.nhance-ppc-card-1 .card-title {
+    background-color: #5BCAF4;
+}
+
+.nhance-ppc-card-2 .card-title {
+    background-color: #E87994;
+}
+.title-span{
+    background-color: #29B473;
+    padding: 7px;
+  border-radius: 18px;
+}
+.main-title h1{
+    text-align: center;
+  color: #fff;
+}
+
+
+
+@media screen and (min-width: 769px) {
+    /* STYLES HERE */
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) { 
+    .content-section {
+  width: 100%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0px 1rem !important;
+}
+.nhance-ppc-card-bg,
+.nhance-ppc-card-bg-1,
+.nhance-ppc-card-bg-2{
+    margin: 5% 0%;
+}
+}
+
+@media only screen and (max-device-width: 480px) {
+    /* STYLES HERE */
+}
